@@ -1,0 +1,178 @@
+{
+	"sheets": [
+		{
+			"name": "gameLevels",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"scope": null
+				},
+				{
+					"typeStr": "3",
+					"name": "randomSeed"
+				},
+				{
+					"typeStr": "17",
+					"name": "rules"
+				},
+				{
+					"typeStr": "17",
+					"name": "blast"
+				}
+			],
+			"lines": [
+				{
+					"id": "one",
+					"randomSeed": 404,
+					"blast": {
+						"colorGroupSetup": [
+							{
+								"group": "yellow",
+								"probability": 10
+							},
+							{
+								"group": "blue",
+								"probability": 10
+							},
+							{
+								"group": "green",
+								"probability": 10
+							},
+							{
+								"group": "pink",
+								"probability": 10
+							},
+							{
+								"group": "red",
+								"probability": 10
+							}
+						],
+						"gridSize": {
+							"x": 9,
+							"y": 9
+						}
+					},
+					"rules": {
+						"maxMoves": 20,
+						"targetScore": 500
+					}
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "gameLevels@rules",
+			"props": {
+				"hide": true,
+				"isProps": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "3",
+					"name": "maxMoves",
+					"opt": true
+				},
+				{
+					"typeStr": "3",
+					"name": "targetScore",
+					"opt": true
+				}
+			]
+		},
+		{
+			"name": "blastGroups",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"scope": null
+				}
+			],
+			"lines": [
+				{
+					"id": "yellow"
+				},
+				{
+					"id": "red"
+				},
+				{
+					"id": "green"
+				},
+				{
+					"id": "pink"
+				},
+				{
+					"id": "blue"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "gameLevels@blast",
+			"props": {
+				"hide": true,
+				"isProps": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "17",
+					"name": "gridSize",
+					"opt": true
+				},
+				{
+					"typeStr": "8",
+					"name": "colorGroupSetup",
+					"opt": true
+				}
+			]
+		},
+		{
+			"name": "gameLevels@blast@gridSize",
+			"props": {
+				"hide": true,
+				"isProps": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "3",
+					"name": "x",
+					"opt": true
+				},
+				{
+					"typeStr": "3",
+					"name": "y",
+					"opt": true
+				}
+			]
+		},
+		{
+			"name": "gameLevels@blast@colorGroupSetup",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:blastGroups",
+					"name": "group"
+				},
+				{
+					"typeStr": "4",
+					"name": "probability"
+				}
+			]
+		}
+	],
+	"customTypes": [],
+	"compress": true
+}
